@@ -62,7 +62,7 @@ function updatePath(robotId, x, y) {
 }
 
 const messageContent = document.getElementById("messages");
-const ws = new WebSocket("ws://222.121.66.27:4001");
+const ws = new WebSocket("ws://localhost:4001");
 const webConnectionStatus = document.getElementById("webConnectionStatus");
 ws.onopen = () => {
   console.log("Connected to webSocket server");
