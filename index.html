@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ar_fleet v1.0 by phatcvo</title>
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Include MQTT library -->
+    <script src="https://cdn.jsdelivr.net/npm/mqtt/dist/mqtt.min.js"></script>
+  </head>
+  <body>
+    <!--<h1>Fleet Management Software</h1>-->
+    <div id="webConnectionStatus">...</div>
+    <div id="map">
+      <canvas id="pathCanvas" width="100%" height="100%"></canvas>
+      <button id="clearButton">Clear Path</button>
+    </div>
+
+    <div id="joystickVisualizer">
+      <canvas id="joystickCanvas" width="100%" height="100%"></canvas>
+    </div>
+    <div id="joystickState"></div>
+    <div id="messages"></div>
+    <!-- Link external JavaScript -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
